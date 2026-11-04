@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "rpgmod",
+  "version": "${version}",
+  "name": "RPG Levels: Путь к Дракону",
+  "description": "Уровни 1-100, окно древа навыков, мини-боссы, кооп и усиленный Эндер-дракон.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.rpgmod.RpgMod"],
+    "client": ["com.example.rpgmod.client.RpgClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
