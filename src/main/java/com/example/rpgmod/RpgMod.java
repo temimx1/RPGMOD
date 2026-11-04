@@ -241,7 +241,7 @@ public class RpgMod implements ModInitializer {
 	}
 
 	static void give(ServerPlayer p, ItemStack stack) {
-		p.getInventory().placeItemBackInInventory(stack);
+		run(SERVER, "give " + p.getScoreboardName() + " " + BuiltInRegistries.ITEM.getKey(stack.getItem()) + " " + stack.getCount());
 	}
 
 	static void addXp(ServerPlayer p, int amount) {
